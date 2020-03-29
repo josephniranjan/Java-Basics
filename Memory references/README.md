@@ -10,6 +10,7 @@
 * Consider This Example –
 
 Rectangle r1 = new Rectangle();
+
 Rectangle r2 = r1;
 r1 is reference variable which contain the address of Actual Rectangle Object.
 r2 is another reference variable
@@ -27,19 +28,24 @@ class RectangleDemo {
   public static void main(String args[]) {
 
   Rectangle r1 = new Rectangle();
+  
   Rectangle r2 = r1;
 
   r1.length = 10;
+  
   r2.length = 20;
 
-  System.out.println("Value of R1's Length : " + r1.length);
+  System.out.println("Value of R1's Length : " + r1.length); 
+  
   System.out.println("Value of R2's Length : " + r2.length);
 
   }
 }
 **Output :**
 java>java RectangleDemo
+
 Value of R1's Length : 20.0
+
 Value of R2's Length : 20.0
 
 There are generally **four** different ways to make an **Object eligible for garbage collection**.
